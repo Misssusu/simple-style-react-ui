@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Misssusu/simple-style-react-ui/issues"
   },
-  "homepage": "https://github.com/Misssusu/simple-style-react-ui#readme"
+  "homepage": "https://github.com/Misssusu/simple-style-react-ui#readme",
+  "devDependencies": {
+    "webpack": "4.29.6",
+    "webpack-cli": "3.2.3"
+  }
 }
