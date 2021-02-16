@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/Misssusu/simple-style-react-ui#readme",
   "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^4.1.5",
     "webpack": "4.29.6",
-    "webpack-cli": "3.2.3"
+    "webpack-cli": "3.2.3",
+    "webpack-server": "^0.1.2"
   }
 }
