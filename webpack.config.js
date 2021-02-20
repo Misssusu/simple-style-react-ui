@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode: 'production',
     entry: {
@@ -16,5 +17,11 @@ module.exports = {
                 loader: 'awesome-typescript-loader'   //将ts转为js
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'simple-style-react-ui',
+            template: 'index.html'
+        })
+    ]
 }
