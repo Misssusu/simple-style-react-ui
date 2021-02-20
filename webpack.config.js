@@ -5,6 +5,9 @@ module.exports = {
     entry: {
         index: './lib/index.tsx'
     },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx']
+    },
     output: {
         path: path.resolve(__dirname, 'dist/lib'),
         library: 'simple-style-react-ui',
@@ -23,5 +26,8 @@ module.exports = {
             title: 'simple-style-react-ui',
             template: 'index.html'
         })
-    ]
+    ],
+    performance : {
+        hints : false
+    } 
 }
