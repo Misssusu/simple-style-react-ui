@@ -5,7 +5,7 @@
   "main": "dist/lib/index.js",
   "types": "dist/lib/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.js --runInBand",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
@@ -21,11 +21,17 @@
   },
   "homepage": "https://github.com/Misssusu/simple-style-react-ui#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^26.6.3",
     "cross-env": "^7.0.3",
     "html-webpack-plugin": "3.2.0",
+    "jest": "^26.6.3",
+    "react-test-renderer": "^17.0.1",
+    "ts-jest": "^26.5.1",
     "typescript": "^4.1.5",
     "webpack": "4.29.6",
     "webpack-cli": "3.2.3",
