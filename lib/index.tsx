@@ -9,4 +9,4 @@ ReactDom.render(
         <Button/>
         <Icon name='wechat'/>
     </div>,
-    document.body);
+    document.querySelector('#root'));

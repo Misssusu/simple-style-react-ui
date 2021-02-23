@@ -1,5 +1,4 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode: 'production',
     entry: {
@@ -21,7 +20,7 @@ module.exports = {
             },
             {
                 test: /\.svg$/,
-                loader: 'svg-sprite-loader'
+                loader: 'svg-sprite-loader'   //解析svg
             }
         ]
     }
