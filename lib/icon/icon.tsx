@@ -4,11 +4,13 @@ import './icon.scss';
 
 interface IconProps extends React.SVGAttributes<SVGElement>{
     name: string;
+    classname?: string
 }
 
 const Icon: React.FunctionComponent<IconProps> = (props) => {
+    const { classname } = props
     return (
-        <svg className='s-icon' {...props}>
+        <svg className={`s-icon ${classname}`} {...props}>
             <use xlinkHref={`#${props.name}`}/>
         </svg>
     )
