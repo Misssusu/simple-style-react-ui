@@ -11,6 +11,9 @@ const clickHandel: React.MouseEventHandler = (e) =>{
 ReactDom.render(
     <div>
         <Button/>
-        <Icon name='wechat' onClick={clickHandel}/>
+        <Icon name='wechat'
+              onClick={clickHandel}
+              onMouseEnter={()=>{console.log('enter');}}
+        />
     </div>,
     document.querySelector('#root'));
