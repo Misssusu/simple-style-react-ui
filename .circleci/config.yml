@@ -1,0 +1,46 @@
+# 设置默认 image
+defaults: &defaults
+  docker:
+    - image: circleci/node:8
+
+version: 2
+jobs:
+  prepare:
+    # 导入默认设置
+    <<: *defaults
+    steps:
+      - checkout
+      - run: yarn install
+      - restore_cache:
+          keys:
+            - v2-dependencies-{{ checksum "package.json" }}
+      - save_cache:
+          key: v2-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+  build:
+    <<: *defaults
+    steps:
+
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: yarn cli
+      - store_test_results:
+          path: test-results
+workflows:
+  version: 2
+
+  Meme-CI:
+    jobs:
+      - prepare
+      - test:
+          requires:
+            - prepare
