@@ -1,7 +1,7 @@
 # 设置默认 image
 defaults: &defaults
   docker:
-    - image: circleci/node:8
+    - image: circleci/node:10.14.2
 
 version: 2
 jobs:
