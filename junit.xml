@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="0" errors="0" time="4.668">
+  <testsuite name="第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2021-02-25T10:13:46" time="1.602" tests="1">
+    <testcase classname="第一个测试用例 1等于1" name="第一个测试用例 1等于1" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2021-02-25T10:13:46" time="1.651" tests="1">
+    <testcase classname="button 是一个div" name="button 是一个div" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2021-02-25T10:13:46" time="2.21" tests="2">
+    <testcase classname="icon 是一个 svg" name="icon 是一个 svg" time="0.011">
+    </testcase>
+    <testcase classname="icon onClick" name="icon onClick" time="0.046">
+    </testcase>
+  </testsuite>
+</testsuites>
