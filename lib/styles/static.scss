@@ -1,0 +1,46 @@
+/*  Center
+-------------------------- */
+@mixin flexCenterMx($flexType){
+  display: $flexType;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Font-size
+-------------------------- */
+$--font-size: 14px !default;
+
+/*  Button
+-------------------------- */
+$--button-height: 32px;
+$--button-radius: 4px;
+$--color: #606266;
+$--color-white: #fff !default;
+$--border-color: #dcdfe6;
+$--border-color-hover: #dcdfe6;
+$--button-padding: 4px 12px !default;
+
+$--color-default-fill: #fff;
+$--color-default-hover-fill: #ecf5ff;
+$--color-default-hover: #409eff;
+$--button-default-active: #3a8ee6;
+
+$--color-primary-fill: #5297DB !default;
+$--color-primary-hover: #66b1ff !default;
+$--color-primary-active: #3a8ee6 !default;
+
+$--color-warning-fill: #FFC429 !default;
+$--color-warning-active: #E6A23C !default;
+$--color-warning-hover: #ebb563 !default;
+
+$--color-danger-fill: rgba(222, 69, 97, 0.8) !default;
+$--color-danger-active: #dd6161 !default;
+$--color-danger-hover: #f78989 !default;
+
+$--color-info-fill: #909399 !default;
+$--color-info-active: #82848a !default;
+$--color-info-hover: #a6a9ad !default;
+
+$--color-success-fill: #67c23a !default;
+$--color-success-active: #5daf34 !default;
+$--color-success-hover: #85ce61 !default;
