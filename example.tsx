@@ -5,10 +5,11 @@ import IconExample from "./lib/icon/icon.example";
 import ButtonExample from "./lib/button/button.example";
 import InputExample from "./lib/input/input.example";
 import LayoutExample from "./lib/layout/layout.example";
+import "./example.scss";
 
 ReactDOM.render(
     <Router>
-        <div>
+        <div className="box">
             <header>
                 <div>simple-style-ui</div>
             </header>

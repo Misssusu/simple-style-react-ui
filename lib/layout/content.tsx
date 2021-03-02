@@ -1,8 +1,13 @@
 import React from "react";
+import classes from "../../helpers/classes";
 
-const Content: React.FunctionComponent = () => {
+interface Props extends React.HTMLAttributes<HTMLElement>{
+    
+}
+
+const Content: React.FunctionComponent<Props> = (props) => {
     return(
-        <div className="s-layout-content">content</div>
+        <div className={classes(['s-layout-content',props.className])}>content</div>
     )
 }
 

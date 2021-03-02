@@ -1,8 +1,13 @@
 import React from "react";
+import classes from "../../helpers/classes";
 
-const Header: React.FunctionComponent = () => {
+interface Props extends React.HTMLAttributes<HTMLElement>{
+
+}
+
+const Header: React.FunctionComponent<Props> = (props) => {
     return(
-        <div className="s-layout-header">header</div>
+        <div className={classes(['s-layout-header',props.className])}>header</div>
     )
 }
 

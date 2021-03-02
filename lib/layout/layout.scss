@@ -1,3 +1,18 @@
+@import "../styles/global";
 .s-layout {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  &-content {
+    flex-grow: 1;
+  }
+  .s-layout {
+    flex-grow: 1;
+    flex-direction: row;
+  }
+  &.hasAside {
+    flex-direction: row;
+    .s-layout {
+      flex-direction: column;
+    }
+  }
 }
