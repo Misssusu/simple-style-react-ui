@@ -1,0 +1,37 @@
+@import "../styles/static";
+
+.s-input {
+  border-radius: $--border-radius;
+  display: inline-block;
+  height: $--input-height;
+  line-height: $--input-height;
+  padding: $--input-padding;
+  outline: none;
+  border: 1px solid $--input-border-color;
+  background: $--color-white;
+  transition: background-color .3s;
+  &:hover {
+    border-color: $--input-border-color-hover;
+  }
+  &:focus {
+    border-color: $--input-border-color-focus;
+  }
+}
+.s-input[disabled] {
+  color: $--input-color-disabled;
+  background: $--input-color-fill-disabled;
+}
+.s-input-wrapper {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  align-items: center;
+  .s-input-icon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+  }
+  & + & {
+    margin-left: 20px;
+  }
+}
