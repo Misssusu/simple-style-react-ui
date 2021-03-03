@@ -2,13 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {HashRouter as Router, Route, NavLink } from "react-router-dom";
 import IconExample from "./lib/icon/icon.example";
-import ButtonExample from "./lib/button/button.example";
 import InputExample from "./lib/input/input.example";
 import LayoutExample from "./lib/layout/layout.example";
 import Icon from "./lib/icon/icon";
 import "./example.scss";
 import { Layout, Aside, Content, Footer, Header } from "./lib/layout/layout";
-
+import ButtonDemo from "./lib/button/button.demo";
 ReactDOM.render(
     <Router>
         <Layout className="box">
@@ -35,7 +34,7 @@ ReactDOM.render(
                 </Aside>
                 <Content className="site-main">
                     <Route path="/icon" component={IconExample}/>
-                    <Route path="/button" component={ButtonExample}/>
+                    <Route path="/button" component={ButtonDemo}/>
                     <Route path="/input" component={InputExample}/>
                     <Route path="/layout" component={LayoutExample}/>
                 </Content>
