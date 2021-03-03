@@ -6,8 +6,11 @@ interface Props extends React.HTMLAttributes<HTMLElement>{
 }
 
 const Header: React.FunctionComponent<Props> = (props) => {
+    const {className, ...rest} = props;
     return(
-        <div className={classes(['s-layout-header',props.className])}>header</div>
+        <div className={classes(['s-layout-header',props.className])} {...rest}>
+            {props.children}
+        </div>
     )
 }
 

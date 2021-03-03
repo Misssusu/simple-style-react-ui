@@ -1,5 +1,53 @@
 @import "./lib/styles/global";
 
 .box {
-  padding: 20px 40px;
+}
+.site-header {
+  height: 80px;
+  line-height: 80px;
+  padding: 0 20px;
+  box-shadow: 0 2px 8px #f0f1f2;
+}
+.site-logo {
+  color: #00ADB5;
+  font-size: 32px;
+}
+.site-layout {
+}
+.site-aside {
+  border: 1px solid $--main-border-color;
+  margin-right: 20px;
+  padding-left: 20px;
+  h2 {
+    padding: 8px;
+    font-size: 18px;
+  }
+  ul {
+    padding: 8px;
+    min-width: 12em;
+    > li {
+      padding: 8px 0;
+      a:hover {
+        color: $--main-color;
+      }
+    }
+  }
+}
+.site-main {
+  padding-top: 16px;
+}
+.site-footer {
+  border-top: 1px solid $--main-border-color;
+  height: 60px;
+  line-height: 60px;
+  color: #666;
+  text-align: center;
+  ul {
+    display: flex;
+    justify-content: center;
+    font-size: $--font-size;
+    li:last-child {
+      margin-left: 20px;
+    }
+  }
 }

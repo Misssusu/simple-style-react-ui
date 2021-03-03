@@ -13,41 +13,41 @@ export default function () {
             <div>
                 <h1>第一个例子</h1>
                 <Layout style={{height: 500, width: 500}}>
-                    <Header className="row header"></Header>
-                    <Content className="content"></Content>
-                    <Footer className="row footer"></Footer>
+                    <Header className="row layout-header">header</Header>
+                    <Content className="layout-content">content</Content>
+                    <Footer className="row layout-footer">footer</Footer>
                 </Layout>
             </div>
             <div>
                 <h1>第二个例子</h1>
                 <Layout style={{height: 500, width: 500}}>
-                    <Header className="row header"></Header>
+                    <Header className="row layout-header">header</Header>
                     <Layout>
-                        <Aside className="aside"></Aside>
-                        <Content className="content"></Content>
+                        <Aside className="layout-aside">aside</Aside>
+                        <Content className="layout-content">content</Content>
                     </Layout>
-                    <Footer className="row footer"></Footer>
+                    <Footer className="row layout-footer">footer</Footer>
                 </Layout>
             </div>
             <div>
                 <h1>第三个例子</h1>
                 <Layout style={{height: 500, width: 500}}>
-                    <Header className="row header"></Header>
+                    <Header className="row layout-header">header</Header>
                     <Layout>
-                        <Content className="content"></Content>
-                        <Aside className="aside"></Aside>
+                        <Content className="layout-content">content</Content>
+                        <Aside className="layout-aside">aside</Aside>
                     </Layout>
-                    <Footer className="row footer"></Footer>
+                    <Footer className="row layout-footer">footer</Footer>
                 </Layout>
             </div>
             <div>
                 <h1>第四个例子</h1>
                 <Layout style={{height: 500, width: 500}}>
-                    <Aside className="aside"></Aside>
+                    <Aside className="layout-aside"/>
                     <Layout>
-                        <Header className="header row"></Header>
-                        <Content className="content"></Content>
-                        <Footer className="footer row"></Footer>
+                        <Header className="layout-header row">header</Header>
+                        <Content className="layout-content">content</Content>
+                        <Footer className="layout-footer row">footer</Footer>
                     </Layout>
                 </Layout>
             </div>

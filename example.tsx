@@ -5,16 +5,18 @@ import IconExample from "./lib/icon/icon.example";
 import ButtonExample from "./lib/button/button.example";
 import InputExample from "./lib/input/input.example";
 import LayoutExample from "./lib/layout/layout.example";
+import Icon from "./lib/icon/icon";
 import "./example.scss";
+import { Layout, Aside, Content, Footer, Header } from "./lib/layout/layout";
 
 ReactDOM.render(
     <Router>
-        <div className="box">
-            <header>
-                <div>simple-style-ui</div>
-            </header>
-            <div>
-                <aside>
+        <Layout className="box">
+            <Header className="site-header">
+                <div className="site-logo">simple-style-ui</div>
+            </Header>
+            <Layout className="site-layout">
+                <Aside className="site-aside">
                     <h2>组件</h2>
                     <ul>
                         <li>
@@ -30,15 +32,24 @@ ReactDOM.render(
                             <Link to="/layout">Layout</Link>
                         </li>
                     </ul>
-                </aside>
-                <main>
+                </Aside>
+                <Content className="site-main">
                     <Route path="/icon" component={IconExample}/>
                     <Route path="/button" component={ButtonExample}/>
                     <Route path="/input" component={InputExample}/>
                     <Route path="/layout" component={LayoutExample}/>
-                </main>
-            </div>
-        </div>
+                </Content>
+            </Layout>
+            <Footer className="site-footer">
+                <ul>
+                    <li>
+                        <Icon name="github"/>
+                        <span> Github</span>
+                    </li>
+                    <li> &copy; suyuan</li>
+                </ul>
+            </Footer>
+        </Layout>
     </Router>,
     document.getElementById('root')
 )

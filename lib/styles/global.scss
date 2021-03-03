@@ -5,3 +5,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+ul,li {
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Theme
+-------------------------- */
+$--main-color: #00ADB5;
+$--main-border-color: #EEEE;
+
+/* Font-size
+-------------------------- */
+$--font-size: 14px !default;
