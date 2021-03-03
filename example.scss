@@ -1,6 +1,8 @@
 @import "./lib/styles/global";
 
-.box {
+
+.site-page {
+  min-height: 100vh;
 }
 .site-header {
   height: 60px;
@@ -61,4 +63,11 @@
       margin-left: 20px;
     }
   }
+}
+
+pre {
+  font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+}
+.example {
+  padding: 16px 0;
 }

@@ -10,7 +10,7 @@ import { Layout, Aside, Content, Footer, Header } from "./lib/layout/layout";
 import ButtonDemo from "./lib/button/button.demo";
 ReactDOM.render(
     <Router>
-        <Layout className="box">
+        <Layout className="site-page">
             <Header className="site-header">
                 <div className="site-logo">simple-style-ui</div>
             </Header>
