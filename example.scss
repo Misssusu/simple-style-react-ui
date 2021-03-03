@@ -3,32 +3,43 @@
 .box {
 }
 .site-header {
-  height: 80px;
-  line-height: 80px;
+  height: 60px;
+  line-height: 60px;
   padding: 0 20px;
-  box-shadow: 0 2px 8px #f0f1f2;
+  border-bottom: 1px solid #eaecef;
 }
 .site-logo {
-  color: #00ADB5;
-  font-size: 32px;
-}
-.site-layout {
+  font-size: 20px;
+  color: #2c3e50;
 }
 .site-aside {
   border: 1px solid $--main-border-color;
   margin-right: 20px;
   padding-left: 20px;
   h2 {
-    padding: 8px;
+    padding: 20px 8px;
     font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
   }
   ul {
-    padding: 8px;
     min-width: 12em;
+    > li:not(:first-child) {
+      margin-top: 10px;
+    }
     > li {
-      padding: 8px 0;
-      a:hover {
-        color: $--main-color;
+      a {
+        color: #2c3e50;
+        display: block;
+        padding: 6px 8px;
+        &:hover {
+          color: $--main-color;
+        }
+        &.active {
+          color: $--main-color;
+          font-weight: bold;
+          border-right: 4px solid $--main-color;
+        }
       }
     }
   }

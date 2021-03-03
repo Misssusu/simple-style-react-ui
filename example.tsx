@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {HashRouter as Router, Route, Link } from "react-router-dom";
+import {HashRouter as Router, Route, NavLink } from "react-router-dom";
 import IconExample from "./lib/icon/icon.example";
 import ButtonExample from "./lib/button/button.example";
 import InputExample from "./lib/input/input.example";
@@ -20,16 +20,16 @@ ReactDOM.render(
                     <h2>组件</h2>
                     <ul>
                         <li>
-                            <Link to="/icon">Icon</Link>
+                            <NavLink to="/icon">Icon</NavLink>
                         </li>
                         <li>
-                            <Link to="/button">Button</Link>
+                            <NavLink to="/button">Button</NavLink>
                         </li>
                         <li>
-                            <Link to="/input">Input</Link>
+                            <NavLink to="/input">Input</NavLink>
                         </li>
                         <li>
-                            <Link to="/layout">Layout</Link>
+                            <NavLink to="/layout">Layout</NavLink>
                         </li>
                     </ul>
                 </Aside>
