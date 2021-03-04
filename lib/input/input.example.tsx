@@ -7,7 +7,7 @@ const InputExample: React.FunctionComponent = () => {
         <div>
             <Input placeholder="Please enter content"/>
             <Input suffix="search" placeholder="Please enter content"/>
-            <Input password suffix="eye" placeholder="Please enter content"/>
+            <Input password suffix="eye" placeholder="Please enter password"/>
             <Input
                 suffix='clear'
                 value={inputValue}
