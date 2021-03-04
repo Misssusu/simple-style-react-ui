@@ -1,36 +1,48 @@
-import React, {useState} from "react";
+import React, {InputHTMLAttributes, useState} from "react";
 import "./input.scss";
 import Icon from "../icon/icon";
+import "../../helpers/classes";
+import classes from "../../helpers/classes";
 
-interface InputProps {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
     password? : boolean;
     icon? : any;
+    suffix? : string
+    prefix? : string
 }
 
 const Input: React.FunctionComponent<InputProps> = (props) => {
-    const { password } = props
+    const { password, suffix, prefix, className, ...rest } = props;
     const [showPassword, setShowPassword] = useState(password)
     const [inputType, setInputType] = useState('text')
-    const changeType = () => {
+    const clickEvent = () => {
         setShowPassword(!showPassword)
         showPassword? setInputType('password') :setInputType('text')
     }
-    return (
-        <div className="s-input-wrapper">
-            <div>{password}</div>
-            <input className="s-input" type={inputType}/>
-            {
-                password? (<div className="s-input-icon">
-                    {showPassword? (
-                        <Icon name="eye" onClick={changeType}/>
-                    ): (
-                        <Icon name="eye-close" onClick={changeType}/>
-                    )}
-                </div>): (<div className="s-input-icon">
-                    <Icon name={props.icon} onClick={changeType}/>
-                </div>)
-            }
+    const positionName = suffix? 'suffix': 'prefix';
+    const psw = (
+        <div className={classes(['s-input-icon',positionName])}>
+            {showPassword? (
+                <Icon name="eye" onClick={clickEvent}/>
+            ): (
+                <Icon name="eye-close" onClick={clickEvent}/>
+            )}
         </div>
+    )
+    const def = (
+        <span className={classes(['s-input-icon',positionName])}>
+            <Icon name={suffix || prefix} onClick={clickEvent}/>
+        </span>
+    )
+    return (
+            <div className="s-input-wrapper">
+                <input
+                    className={classes(['s-input',className,positionName])}
+                    type={inputType}
+                    {...rest}
+                />
+                { password? psw: def }
+            </div>
     )
 }
 

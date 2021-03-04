@@ -5,8 +5,9 @@
   display: inline-block;
   height: $--input-height;
   line-height: $--input-height;
-  padding: $--input-padding;
   outline: none;
+  padding-left: $--input-padding;
+  padding-right: $--input-padding;
   border: 1px solid $--input-border-color;
   background: $--color-white;
   transition: background-color .3s;
@@ -17,6 +18,12 @@
     border-color: $--input-border-color-focus;
   }
 }
+.s-input.prefix {
+  padding-left: 40px;
+}
+.s-input.suffix {
+  padding-right: 40px;
+}
 .s-input[disabled] {
   color: $--input-color-disabled;
   background: $--input-color-fill-disabled;
@@ -26,9 +33,14 @@
   display: inline-flex;
   width: 180px;
   align-items: center;
-  .s-input-icon {
+  .s-input-icon.suffix {
     position: absolute;
-    right: 15px;
+    right: -15px;
+    cursor: pointer;
+  }
+  .s-input-icon.prefix {
+    position: absolute;
+    left: 15px;
     cursor: pointer;
   }
   & + & {
