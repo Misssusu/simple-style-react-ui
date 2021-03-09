@@ -26,6 +26,7 @@ const Demo: React.FunctionComponent<Props> = (props) => {
             <div className="example">
                 {props.children}
             </div>
+            <h4>代码</h4>
             <div>
                 {code}
             </div>

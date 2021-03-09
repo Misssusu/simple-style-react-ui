@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {HashRouter as Router, Route, NavLink } from "react-router-dom";
-import IconExample from "./lib/icon/icon.example";
-import InputExample from "./lib/input/input.example";
-import LayoutExample from "./lib/layout/layout.example";
-import Icon from "./lib/icon/icon";
-import "./example.scss";
-import { Layout, Aside, Content, Footer, Header } from "./lib/layout/layout";
-import ButtonDemo from "./lib/button/button.demo";
+import IconExample from "../lib/icon/icon.example";
+import InputExample from "../lib/input/input.example";
+import LayoutExample from "../lib/layout/layout.example";
+import Icon from "../lib/icon/icon";
+import "./index.scss";
+import { Layout, Aside, Content, Footer, Header } from "../lib/layout/layout";
+import ButtonDemo from "./button/button.demo";
 ReactDOM.render(
     <Router>
         <Layout className="site-page">
