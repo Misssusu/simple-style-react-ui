@@ -4,7 +4,7 @@ import Button from "./button";
 const ButtonExample: React.FunctionComponent = () => {
     return (
         <div>
-            <Button type="default" onClick={()=>{console.log('click')}}/>
+            <Button type="default"/>
             <Button type="primary"/>
             <Button type="warning"/>
             <Button type="danger"/>

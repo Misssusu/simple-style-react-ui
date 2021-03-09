@@ -69,5 +69,22 @@ pre {
   font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
 }
 .example {
-  padding: 16px 0;
+  padding: 16px 0 40px 0;
+}
+.prism-code {
+  width: 60%;
+  background-color: rgb(30, 33, 34) !important;
+  padding: 18px 32px;
+  .keyword {
+    color: rgb(198, 136, 193) !important;
+  }
+  .plain, .attr-name, .function-variable {
+    color: rgb(135, 213, 254) !important;
+  }
+  .string, .attr-value {
+    color: rgb(207, 148, 123) !important;
+  }
+  .attr-equals {
+    color: rgb(205, 200, 194) !important;
+  }
 }
