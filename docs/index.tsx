@@ -7,6 +7,7 @@ import { Content, Footer, Header } from "../lib/layout/layout";
 import ButtonDemo from "./button/button.demo";
 import InputDemo from "./input/input.demo";
 import LayoutDemo from "./layout/layout.demo";
+import InstallDemo from "./install/install.demo";
 
 ReactDOM.render(
     <Router>
@@ -16,20 +17,32 @@ ReactDOM.render(
             </Header>
             <div className="site-layout">
                 <aside className="site-aside">
-                    <h2>组件</h2>
-                    <ul>
-                        <li>
-                            <NavLink to="/button">Button</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/input">Input</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/layout">Layout</NavLink>
-                        </li>
-                    </ul>
+                    <div>
+                        <h2>快速开始</h2>
+                        <ul>
+                            <li>
+                                <NavLink to="/install">install</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>组件</h2>
+                        <ul>
+                            <li>
+                                <NavLink to="/button">Button</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/input">Input</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/layout">Layout</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+
                 </aside>
                 <Content className="site-main">
+                    <Route path="/install" component={InstallDemo}/>
                     <Route path="/button" component={ButtonDemo}/>
                     <Route path="/input" component={InputDemo}/>
                     <Route path="/layout" component={LayoutDemo}/>

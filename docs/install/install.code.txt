@@ -1,0 +1,3 @@
+npm install simple-style-react-ui
+
+yarn add simple-style-react-ui
