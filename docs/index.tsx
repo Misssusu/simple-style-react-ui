@@ -1,21 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {HashRouter as Router, Route, NavLink } from "react-router-dom";
-import LayoutExample from "../lib/layout/layout.example";
+import { HashRouter as Router, Route, NavLink } from "react-router-dom";
 import Icon from "../lib/icon/icon";
 import "./index.scss";
-import { Layout, Aside, Content, Footer, Header } from "../lib/layout/layout";
+import { Content, Footer, Header } from "../lib/layout/layout";
 import ButtonDemo from "./button/button.demo";
 import InputDemo from "./input/input.demo";
+import LayoutDemo from "./layout/layout.demo";
 
 ReactDOM.render(
     <Router>
-        <Layout className="site-page">
+        <div className="site-page">
             <Header className="site-header">
                 <div className="site-logo">simple-style-ui</div>
             </Header>
-            <Layout className="site-layout">
-                <Aside className="site-aside">
+            <div className="site-layout">
+                <aside className="site-aside">
                     <h2>组件</h2>
                     <ul>
                         <li>
@@ -28,13 +28,13 @@ ReactDOM.render(
                             <NavLink to="/layout">Layout</NavLink>
                         </li>
                     </ul>
-                </Aside>
+                </aside>
                 <Content className="site-main">
                     <Route path="/button" component={ButtonDemo}/>
                     <Route path="/input" component={InputDemo}/>
-                    <Route path="/layout" component={LayoutExample}/>
+                    <Route path="/layout" component={LayoutDemo}/>
                 </Content>
-            </Layout>
+            </div>
             <Footer className="site-footer">
                 <ul>
                     <li>
@@ -44,7 +44,7 @@ ReactDOM.render(
                     <li> &copy; suyuan</li>
                 </ul>
             </Footer>
-        </Layout>
+        </div>
     </Router>,
     document.getElementById('root')
 );

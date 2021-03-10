@@ -1,0 +1,7 @@
+import { Layout, Header, Content, Footer} from "simple-style-react-ui";
+
+<Layout>
+    <Header>header</Header>
+    <Content>content</Content>
+    <Footer>footer</Footer>
+</Layout>

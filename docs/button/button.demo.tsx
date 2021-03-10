@@ -1,7 +1,7 @@
 import ButtonExample from "./button.example";
 import React from "react";
 import Demo from "../demo";
-const code = require('!!raw-loader!./button.example.tsx');
+const code = require('!!raw-loader!./button.code.txt');
 
 const ButtonDemo:React.FunctionComponent = () => {
     return(

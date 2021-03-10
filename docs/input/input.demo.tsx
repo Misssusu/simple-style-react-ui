@@ -3,9 +3,9 @@ import InputExampleSearch from "./input.example.search";
 import InputExampleLogin from "./input.example.login";
 import React from "react";
 import Demo from "../demo";
-const code = require('!!raw-loader!./input.code.tsx');
-const searchCode = require('!!raw-loader!./input.search.code.tsx');
-const loginCode = require('!!raw-loader!./input.login.code.tsx');
+const code = require('!!raw-loader!./input.code.txt');
+const searchCode = require('!!raw-loader!./input.search.code.txt');
+const loginCode = require('!!raw-loader!./input.login.code.txt');
 
 const InputDemo:React.FunctionComponent = () => {
     return(

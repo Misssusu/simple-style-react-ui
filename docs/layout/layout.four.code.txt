@@ -1,0 +1,10 @@
+import { Layout, Header, Content, Footer, Aside} from "simple-style-react-ui";
+
+<Layout>
+    <Aside/>
+    <Layout>
+        <Header>header</Header>
+        <Content>content</Content>
+        <Footer>footer</Footer>
+    </Layout>
+</Layout>
